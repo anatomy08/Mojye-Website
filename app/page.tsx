@@ -3,6 +3,7 @@ import { ScrollEffects } from "./ScrollEffects";
 
 const playStoreUrl =
   "https://play.google.com/store/apps/details?id=com.jyestudios.mojye";
+const browserAppUrl = "https://mojye-app.vercel.app";
 
 const features = [
   {
@@ -194,7 +195,7 @@ export default function Home() {
           <a href="#privacy">Privacy</a>
           <a href="#web">Web app</a>
         </div>
-        <a className="nav-download" href={playStoreUrl} target="_blank" rel="noreferrer">Get Mojye <span>↗</span></a>
+        <a className="nav-download" href={browserAppUrl} target="_blank" rel="noreferrer">Open Web App <span>↗</span></a>
       </nav>
 
       <section className="hero" id="top">
@@ -208,6 +209,9 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <PlayButton />
+            <a className="browser-button" href={browserAppUrl} target="_blank" rel="noreferrer">
+              Try in Browser <span>↗</span>
+            </a>
             <a className="watch-link" href="#experience"><span>↓</span> See Mojye in action</a>
           </div>
           <div className="hero-proof"><span>No sign-up</span><span>Works offline</span><span>Data stays on your device</span></div>
@@ -378,13 +382,14 @@ export default function Home() {
 
       <section className="web-section" id="web">
         <div className="web-copy" data-reveal="left">
-          <span className="coming-pill"><i /> Browser edition coming next</span>
-          <h2>Mojye is growing beyond the phone.</h2>
+          <span className="coming-pill"><i /> Browser edition is live</span>
+          <h2>Use Mojye on a bigger screen.</h2>
           <p>
-            A browser edition is being prepared for a bigger canvas. Browser and
-            Android data will remain separate unless you move a backup between them.
+            Track your money, ask Mojye, grow your Savings Tree, and manage card
+            reminders directly in your browser. Browser and Android data remain
+            separate unless you move a backup between them.
           </p>
-          <a href={playStoreUrl} target="_blank" rel="noreferrer">Use Mojye on Android today <span>↗</span></a>
+          <a className="web-browser-button" href={browserAppUrl} target="_blank" rel="noreferrer">Try in Browser <span>↗</span></a>
         </div>
         <div className="web-visual" data-reveal="right">
           <div className="laptop">
@@ -409,7 +414,7 @@ export default function Home() {
       <footer>
         <Wordmark inverse />
         <p>Mojye: Budget Tracker · Built by JYE Studios</p>
-        <div><a href="#experience">Experience</a><a href="#privacy">Privacy</a><a href={playStoreUrl} target="_blank" rel="noreferrer">Google Play</a></div>
+        <div><a href="#experience">Experience</a><a href="#privacy">Privacy</a><a href={browserAppUrl} target="_blank" rel="noreferrer">Browser App</a><a href={playStoreUrl} target="_blank" rel="noreferrer">Google Play</a></div>
       </footer>
     </main>
   );

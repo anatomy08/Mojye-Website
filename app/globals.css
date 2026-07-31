@@ -94,6 +94,8 @@ main { overflow: clip; }
 .play-button:hover { box-shadow: 2px 2px 0 var(--gold); transform: translate(4px,4px); }
 .play-button small { display: block; font-size: 8px; letter-spacing: .15em; margin-bottom: 1px; }
 .play-mark { border-bottom: 9px solid transparent; border-left: 14px solid var(--gold-bright); border-top: 9px solid transparent; height: 0; width: 0; }
+.browser-button { align-items: center; background: var(--leaf-bright); border: 2px solid var(--ink); border-radius: 18px; box-shadow: 5px 5px 0 var(--ink); display: inline-flex; font-size: 13px; font-weight: 900; gap: 10px; min-height: 58px; padding: 0 20px; transition: transform .2s ease, box-shadow .2s ease; }
+.browser-button:hover { box-shadow: 2px 2px 0 var(--ink); transform: translate(3px,3px); }
 .watch-link { align-items: center; display: inline-flex; font-size: 13px; font-weight: 850; gap: 10px; }
 .watch-link span { align-items: center; border: 1px solid var(--line); border-radius: 50%; display: inline-flex; height: 34px; justify-content: center; transition: background .2s ease, transform .2s ease; width: 34px; }
 .watch-link:hover span { background: var(--leaf-bright); transform: translateY(4px); }
@@ -342,6 +344,8 @@ main { overflow: clip; }
 .web-copy h2 { font-size: clamp(48px,5vw,76px); }
 .web-copy > p { color: rgba(33,24,15,.7); }
 .web-copy > a { border-bottom: 2px solid var(--ink); display: inline-flex; font-size: 12px; font-weight: 900; gap: 8px; margin-top: 18px; padding-bottom: 5px; }
+.web-copy > .web-browser-button { align-items: center; background: var(--ink); border: 2px solid var(--ink); border-radius: 16px; box-shadow: 5px 5px 0 rgba(255,250,240,.55); color: white; font-size: 13px; min-height: 54px; padding: 0 20px; transition: transform .2s ease, box-shadow .2s ease; }
+.web-copy > .web-browser-button:hover { box-shadow: 2px 2px 0 rgba(255,250,240,.55); transform: translate(3px,3px); }
 .web-visual { min-height: 510px; position: relative; }
 .laptop { background: #18130f; border: 5px solid #18130f; border-radius: 22px 0 0 22px; box-shadow: -28px 32px 60px rgba(67,37,12,.26); min-height: 410px; overflow: hidden; position: absolute; right: -3%; top: 35px; transform: perspective(1200px) rotateY(-7deg); width: 90%; }
 .laptop-bar { align-items: center; background: #2a221a; display: flex; gap: 6px; height: 35px; padding: 0 13px; }
