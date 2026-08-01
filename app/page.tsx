@@ -195,7 +195,6 @@ export default function Home() {
           <a href="#privacy">Privacy</a>
           <a href="#web">Web app</a>
         </div>
-        <a className="nav-download" href={browserAppUrl} target="_blank" rel="noreferrer">Open Web App <span>↗</span></a>
       </nav>
 
       <section className="hero" id="top">
