@@ -3,6 +3,9 @@ import { ScrollEffects } from "./ScrollEffects";
 
 const playStoreUrl =
   "https://play.google.com/store/apps/details?id=com.jyestudios.mojye";
+const testersGroupUrl = "https://groups.google.com/g/mojye-testers";
+const closedTestUrl =
+  "https://play.google.com/apps/testing/com.jyestudios.mojye";
 const browserAppUrl = "https://mojye-app.vercel.app";
 
 const features = [
@@ -52,18 +55,16 @@ function Wordmark({ inverse = false }: { inverse?: boolean }) {
 
 function PlayButton({ dark = false }: { dark?: boolean }) {
   return (
-    <a
+    <div
       className={`play-button${dark ? " play-button-dark" : ""}`}
-      href={playStoreUrl}
-      target="_blank"
-      rel="noreferrer"
+      aria-label="Mojye is coming soon to Google Play"
     >
       <span className="play-mark" aria-hidden="true" />
       <span>
-        <small>GET IT ON</small>
+        <small>AVAILABLE SOON ON</small>
         Google Play
       </span>
-    </a>
+    </div>
   );
 }
 
@@ -194,6 +195,7 @@ export default function Home() {
           <a href="#features">Features</a>
           <a href="#privacy">Privacy</a>
           <a href="#web">Web app</a>
+          <a href="#android-test">Test Android</a>
         </div>
       </nav>
 
@@ -410,10 +412,45 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="testers-section" id="android-test">
+        <div className="testers-heading" data-reveal="up">
+          <span className="section-kicker section-kicker-light">Android testers needed</span>
+          <h2>Help Mojye reach Google Play.</h2>
+          <p>
+            Mojye is currently in closed testing. If you have an Android device,
+            follow these three steps to join the test and help an indie developer
+            from the Philippines.
+          </p>
+        </div>
+        <div className="tester-steps">
+          <article data-reveal="up">
+            <span>01</span>
+            <h3>Join the Google Group</h3>
+            <p>Sign in with the Google account you use on your Android device, then join Mojye Testers.</p>
+            <a href={testersGroupUrl} target="_blank" rel="noreferrer">Join Mojye Testers <b>↗</b></a>
+          </article>
+          <article data-reveal="up">
+            <span>02</span>
+            <h3>Become a tester</h3>
+            <p>After joining the group, open the closed-testing page and select “Become a tester.”</p>
+            <a href={closedTestUrl} target="_blank" rel="noreferrer">Open closed test <b>↗</b></a>
+          </article>
+          <article data-reveal="up">
+            <span>03</span>
+            <h3>Install Mojye</h3>
+            <p>Once you have opted in, download Mojye from its Google Play testing listing.</p>
+            <a href={playStoreUrl} target="_blank" rel="noreferrer">Install test version <b>↗</b></a>
+          </article>
+        </div>
+        <p className="tester-note">
+          If Google Play says “App not found” or “Not available,” wait a few minutes after joining the Google Group, then try again.
+        </p>
+      </section>
+
       <footer>
         <Wordmark inverse />
         <p>Mojye: Budget Tracker · Built by JYE Studios</p>
-        <div><a href="#experience">Experience</a><a href="#privacy">Privacy</a><a href={browserAppUrl} target="_blank" rel="noreferrer">Browser App</a><a href={playStoreUrl} target="_blank" rel="noreferrer">Google Play</a></div>
+        <div><a href="#experience">Experience</a><a href="#privacy">Privacy</a><a href={browserAppUrl} target="_blank" rel="noreferrer">Browser App</a><a href="#android-test">Join Android Test</a></div>
       </footer>
     </main>
   );
