@@ -95,6 +95,7 @@ main { overflow: clip; }
 .play-mark { border-bottom: 9px solid transparent; border-left: 14px solid var(--gold-bright); border-top: 9px solid transparent; height: 0; width: 0; }
 .browser-button { align-items: center; background: var(--leaf-bright); border: 2px solid var(--ink); border-radius: 18px; box-shadow: 5px 5px 0 var(--ink); display: inline-flex; font-size: 13px; font-weight: 900; gap: 10px; min-height: 58px; padding: 0 20px; transition: transform .2s ease, box-shadow .2s ease; }
 .browser-button:hover { box-shadow: 2px 2px 0 var(--ink); transform: translate(3px,3px); }
+.apk-button { background: var(--gold-bright); }
 .watch-link { align-items: center; display: inline-flex; font-size: 13px; font-weight: 850; gap: 10px; }
 .watch-link span { align-items: center; border: 1px solid var(--line); border-radius: 50%; display: inline-flex; height: 34px; justify-content: center; transition: background .2s ease, transform .2s ease; width: 34px; }
 .watch-link:hover span { background: var(--leaf-bright); transform: translateY(4px); }

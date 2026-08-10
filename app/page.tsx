@@ -7,6 +7,8 @@ const testersGroupUrl = "https://groups.google.com/g/mojye-testers";
 const closedTestUrl =
   "https://play.google.com/apps/testing/com.jyestudios.mojye";
 const browserAppUrl = "https://mojye-app.vercel.app";
+const apkDownloadUrl =
+  "https://github.com/anatomy08/mojye-downloads/releases/download/v1.0.2/mojye-budget-tracker-1.0.2.apk";
 
 const features = [
   {
@@ -212,6 +214,9 @@ export default function Home() {
             <PlayButton />
             <a className="browser-button" href={browserAppUrl} target="_blank" rel="noreferrer">
               Try in Browser <span>↗</span>
+            </a>
+            <a className="browser-button apk-button" href={apkDownloadUrl}>
+              Download Android APK <span>↓</span>
             </a>
             <a className="watch-link" href="#experience"><span>↓</span> See Mojye in action</a>
           </div>
