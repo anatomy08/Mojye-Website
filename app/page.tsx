@@ -441,18 +441,21 @@ export default function Home() {
             <span>02</span>
             <h3>Become a tester</h3>
             <p>After joining the group, open the closed-testing page and select “Become a tester.”</p>
+            <p className="tester-fallback">
+              If Google Play says “App not found” or “Not available,” wait a few minutes after joining the Google Group, then try again.
+            </p>
             <a href={closedTestUrl} target="_blank" rel="noreferrer">Open closed test <b>↗</b></a>
           </article>
           <article data-reveal="up">
             <span>03</span>
             <h3>Install Mojye</h3>
             <p>Once you have opted in, download Mojye from its Google Play testing listing.</p>
+            <p className="tester-fallback">
+              If Google Play says “App not found” or “Not available,” wait a few minutes after joining the Google Group, then try again.
+            </p>
             <a href={playStoreUrl} target="_blank" rel="noreferrer">Install test version <b>↗</b></a>
           </article>
         </div>
-        <p className="tester-note">
-          If Google Play says “App not found” or “Not available,” wait a few minutes after joining the Google Group, then try again.
-        </p>
       </section>
 
       <footer>
