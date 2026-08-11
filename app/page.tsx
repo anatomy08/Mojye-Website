@@ -432,6 +432,9 @@ export default function Home() {
             <span>01</span>
             <h3>Join the Google Group</h3>
             <p>Sign in with the Google account you use on your Android device, then join Mojye Testers.</p>
+            <p className="tester-fallback">
+              Can&apos;t find the Join button? Search Google Groups for <strong>mojye-testers@googlegroups.com</strong> or <strong>Mojye</strong> to find the group.
+            </p>
             <a href={testersGroupUrl} target="_blank" rel="noreferrer">Join Mojye Testers <b>↗</b></a>
           </article>
           <article data-reveal="up">

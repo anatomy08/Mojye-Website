@@ -377,6 +377,7 @@ main { overflow: clip; }
 .tester-steps article > span { color: var(--terracotta); font-family: Georgia,serif; font-size: 42px; }
 .tester-steps h3 { font-family: Georgia,serif; font-size: 28px; font-weight: 400; margin: 18px 0 12px; }
 .tester-steps p { color: #725f4d; font-size: 13px; line-height: 1.65; margin: 0 0 24px; }
+.tester-steps .tester-fallback { background: #f3ead5; border-left: 3px solid var(--terracotta); border-radius: 0 8px 8px 0; font-size: 11px; margin-top: -10px; overflow-wrap: anywhere; padding: 10px 12px; }
 .tester-steps a { align-items: center; background: var(--gold); border: 2px solid var(--ink); border-radius: 12px; display: flex; font-size: 12px; font-weight: 900; justify-content: space-between; margin-top: auto; padding: 13px 14px; }
 .tester-steps a:hover { background: var(--gold-bright); }
 .tester-note { background: rgba(255,250,240,.1); border: 1px solid rgba(255,250,240,.22); border-radius: 12px; color: #e5edcf; font-size: 12px; line-height: 1.6; margin: 35px auto 0; max-width: 850px; padding: 15px 18px; text-align: center; }
