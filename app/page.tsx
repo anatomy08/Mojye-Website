@@ -199,6 +199,9 @@ export default function Home() {
           <a href="#web">Web app</a>
           <a href="#android-test">Test Android</a>
         </div>
+        <a className="nav-download" href={browserAppUrl} target="_blank" rel="noreferrer">
+          Try in Browser <span>↗</span>
+        </a>
       </nav>
 
       <section className="hero" id="top">

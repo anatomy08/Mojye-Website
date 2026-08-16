@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "@fontsource-variable/fraunces/standard.css";
+import "@fontsource-variable/fraunces/standard-italic.css";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mojye.vercel.app";
