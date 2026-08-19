@@ -8,7 +8,7 @@ const closedTestUrl =
   "https://play.google.com/apps/testing/com.jyestudios.mojye";
 const browserAppUrl = "https://mojye-app.vercel.app";
 const apkDownloadUrl =
-  "https://github.com/anatomy08/mojye-downloads/releases/download/v1.0.2/mojye-budget-tracker-1.0.2.apk";
+  "https://github.com/anatomy08/mojye-downloads/releases/download/v1.0.7/mojye-budget-tracker-1.0.7.apk";
 
 const features = [
   {
